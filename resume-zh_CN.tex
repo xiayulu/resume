@@ -1,0 +1,111 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{周千森}
+
+\basicInfo{
+  \email{2414711236@qq.com} \textperiodcentered\ 
+  \phone{(+86) 152-7190-0848} \textperiodcentered\ 
+}
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{武汉大学}, 武汉}{2019年9月 -- 2023年6月}
+\textit{本科}\ 计算机科学与技术, 2023 年 6 月毕业
+
+\section{\faUsers\ 实习/项目经历}
+
+\datedsubsection{\textbf{WHULambda} \quad 武汉大学}{2021年9月 -- 至今}
+\role{全栈工程师}{复责整个网站的设计，实现与维护}
+WHULambda(https://whu-lambda.com) 是一个在线学习与知识分享网站，使用技术与解决方案：
+\begin{itemize}
+  \item 前端框架: react.js
+  \item 服务端渲染：Next.js
+  \item css框架：tailwindcss
+  \item UI 框架：AntD
+  \item 后端框架：go-fiber
+  \item 缓存服务：go-redis
+  \item 数据库：gorm + postgresql
+  \item 异步任务：asynq
+  \item 配置框架：viper
+  \item 图片存储：云对象存储
+  \item 文章存储：git repo
+  \item 文章协作：Git Smart HTTP
+\end{itemize}
+
+项目难点与挑战：\\
+1. 前后端分离开发：前后端身份认证，RestfulAPI 设计，前后端接口联合调用。\\
+2. 需求分析与流程设计：这个项目的初衷是做一个知识分享平台，需要不断发掘需求与功能。\\
+3. 基础组件定制：目前有很多基础组件，例如 Web 编辑器, 是网上找的，但随着开发的深入，正在定制相关基础组件。\\
+4. 网站运营：随着项目的深入，功能越来越多，业务越来越复杂，对自己的能力水平要求越来越高。
+
+\datedsubsection{\textbf{知识分享项目} \quad 武汉大学}{2020年9月 -- 至今}
+\role{Markdown}{个人负责的内容创作}
+https://github.com/xiayulu/corn 是个人学习笔记的总结。我做这个项目的原因是:
+\begin{itemize}
+  \item 网络现存的学习资料局限于各种流行的技术，但基础知识方面的比较少
+  \item 大学课堂学习效益较低, 做知识分享能加深自己的理解
+  \item 期末复习
+\end{itemize}
+
+在做这个项目的时候，遇到的最大问题就是基础知识领域内的创作非常困难，越是基础的东西越难，我的解决方法是坚持创作。
+
+\datedsubsection{\textbf{知识产权实习}\quad 武汉大学}{2022年6月 -- 至今}
+\role{实习}{负责整理知识产权相关数据}
+\begin{itemize}
+  \item 知识产权平台调研
+  \item 知识产权数据整理
+  \item 知识产权政策调研
+\end{itemize}
+
+\datedsubsection{\textbf{编译原理课设}\quad 武汉大学}{2022年4月 -- 5月}
+\role{课设}{负责实现 OCaml 部分功能}
+\begin{itemize}
+  \item 采用 Rust 语言实现
+  \item 通过阅读 OCaml 语法规范精炼出 ZCaml 语法规则
+  \item 通过递归下降实现了语法树解析
+  \item 实现了简单的类型检查
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 熟练掌握 HTML, CSS, JavaScript 等基础知识;
+  \item 熟练使用 React, tailwindcss, bootstrap Web 框架;
+  \item 熟悉 DevOps 开发流程;
+  \item 熟练使用 Go 语言开发 Restful API;
+\end{itemize}
+
+\section{\faInfo\ 其他技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 语言: 英语
+  \item 写作：Markdown, Latex
+  \item 设计：PS, AI
+  \item 知乎: https://www.zhihu.com/people/xiayulu
+  \item GitHub: https://github.com/xiayulu
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
