@@ -1,0 +1,78 @@
+body {
+  background-color: #aaa;
+  font-family: "微软雅黑";
+  line-height: 1.5;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.info {
+  padding-top: 24px;
+}
+
+.info .name {
+  text-align: center;
+  margin: 0;
+}
+
+.info .tags {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.info .tag:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  margin: 0 12px;
+  height: 12px;
+  width: 1px;
+  background-color: #000;
+}
+
+.info .photo {
+  float: right;
+}
+
+/* .info .contact {
+  margin-left: 60px;
+} */
+
+.info .contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.info .contact-item .iconfont {
+  margin-right: 8px;
+}
+
+.exp-title {
+  color: blue;
+  border-bottom: 1px solid;
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+.exp-hd {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.exp-hd div {
+  flex: 0 0 33%;
+}
+
+.exp-hd .place {
+  text-align: center;
+}
+
+.exp-hd .job {
+  text-align: right;
+}
